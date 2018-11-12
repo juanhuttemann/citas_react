@@ -13,11 +13,16 @@ class ListaCitas extends Component {
                     <h2 className = "card-title"> 
                     {mensaje} 
                     </h2>
-
-                    <Cita/>
+                        { Object.keys(this.props.citas).map(cita => (
+                            <Cita
+                                key={cita}
+                                info={this.props.citas[cita]}
+                                borrarCita={this.props.borrarCita}
+                            />
+                        ))}
                 </div>
             </div>
-         );
+        );
     }
 }
  
