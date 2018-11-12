@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Cita from './Cita';
 
 class ListaCitas extends Component {
     render() {
@@ -9,7 +10,11 @@ class ListaCitas extends Component {
         return ( 
             <div className="card mt-5">
                 <div className="card-body">
-                    <h2 className="card-title">{}</h2>
+                    <h2 className = "card-title"> 
+                    {mensaje} 
+                    </h2>
+
+                    <Cita/>
                 </div>
             </div>
          );
