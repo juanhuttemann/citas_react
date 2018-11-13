@@ -33,15 +33,10 @@ class App extends Component {
   }
 
   borrarCita = id =>{
-    console.log(id);
-  
     const citasActuales = [...this.state.citas];
 
     const citas = citasActuales.filter(cita => cita.id !== id )
-
-    console.log("Despues...");
-    console.log(citas);
-
+  
     this.setState({
       citas
     })
